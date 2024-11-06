@@ -1,0 +1,131 @@
+/* Image Styling with Box Shadow */
+/* Basic Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Soft background color for the body */
+}
+
+/* Header Section with Linear Gradient */
+.header_section {
+    padding: 20px;
+    background: linear-gradient(45deg, #333333, #ff6700); /* Gradient background */
+    color: white; /* Text color for contrast */
+}
+
+.header_section .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_section .navbar .logo img {
+    max-width: 100px;
+}
+
+.header_section .navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.header_section .navbar-nav .nav-link:hover {
+    color: #ffeb3b; /* Yellow on hover for contrast */
+}
+
+/* Fluid Layout */
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1 1 25%;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+/* Main Content */
+.main-content {
+    flex: 3 1 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Overlay Effect */
+.container_main {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.container_main:hover .image {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container_main:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow around images */
+}
+
+.container_main:hover .image {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .sidebar, .main-content {
+        flex: 1 1 100%;
+    }
+}
+

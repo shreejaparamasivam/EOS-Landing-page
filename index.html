@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Header with Gradient -->
+    <header>
+        <h1>Grand Coffee Shop</h1>
+    </header>
+
+    <!-- Bootstrap Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Grand Coffee</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Three-column layout container -->
+    <div class="container my-4">
+        <div class="row">
+            
+            <!-- Left Sidebar -->
+            <aside class="col-md-3 sidebar">
+                <h2>Categories</h2>
+                <ul class="list-unstyled">
+                  <a href="./images/img-1.png"></a> <li>Espresso</li>
+                  <a href="./images/img-2.png"></a> <li>Latte</li>
+                  <a href="./images/img-3.png"></a> <li>Cappucino</li>
+                  <a href="./images/img-8.png"></a> <li>Mocha</li>
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-md-6 main-content">
+                
+                <!-- Hero Section -->
+                <section class="hero">
+                    <h1>Welcome to Grand Coffee</h1>
+                    <p>Your perfect coffee, crafted with love and passion.</p>
+                    <button class="btn btn-primary">Shop Now</button>
+                </section>
+
+                <!-- Products Section -->
+                <section class="products row">
+                    <article class="col-md-6 product">
+                        <img src="./images/banner-bg.png" alt="Coffee Product 1" class="img-fluid">
+                        <h3>Espresso</h3>
+                        <p>Rich, dark, and bold.</p>
+                        <!-- <button class="btn btn-dark">Add to Cart</button> -->
+                    </article>
+                    
+                    <article class="col-md-6 product">
+                        <img src="./images/img-5.png" alt="Coffee Product 2" class="img-fluid">
+                        <h3>Latte</h3>
+                        <p>Smooth and creamy.</p>
+                        <!-- <button class="btn btn-dark">Add to Cart</button> -->
+                    </article>
+
+                    <!-- Add more product articles as needed -->
+                </section>
+
+            </main>
+
+            <!-- Right Sidebar -->
+            <aside class="col-md-3 sidebar">
+                <h2>Special Offers</h2>
+                <p>Get a 10% discount on your first order!</p>
+                <p>Free shipping on orders over $50.</p>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Footer with Gradient -->
+    <footer>
+        <p>&copy; 2024 Grand Coffee Shop. All rights reserved. &hearts; | &reg; </p>
+    </footer>
+    
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

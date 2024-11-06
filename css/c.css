@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Font for the entire page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header_section {
+    background: linear-gradient(45deg, #333333, #ff6700);
+     /* Linear gradient from teal to blue */
+    padding: 20px 0; /* Padding around the header */
+}
+
+
+/* Logo Styles */
+.logo img {
+    height: 50px; /* Adjust logo height */
+}
+/* Navbar background color */
+.navbar {
+    background-color: #08f8c4; /* Header background color */
+}
+
+/* Navbar link color */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Change this to your desired text color */
+}
+
+/* Navbar link hover color */
+.navbar-nav .nav-link:hover {
+    color: #ffeb3b; /* Change this to your desired hover color */
+}
+
+/* Active link color */
+.navbar-nav .nav-item.active .nav-link {
+    color: #ff5722; /* Change this to your desired active link color */
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: transparent; /* Navbar transparent */
+}
+
+/* Contact Section Styles */
+.contact_section {
+    text-align: center; /* Center align text */
+    padding: 50px 0; /* Padding for contact section */
+    background-color: #f8f9fa; /* Light background */
+}
+
+.contact_text {
+    font-size: 32px; /* Larger font for contact title */
+    color: #343a40; /* Dark text color */
+}
+
+/* Contact Form Styles */
+.contact_section_2 {
+    padding: 40px 0; /* Padding around contact section */
+}
+
+.mail_section {
+    padding: 20px; /* Padding for mail section */
+}
+
+.email_text {
+    max-width: 500px; /* Limit width of the form */
+    margin: auto; /* Center the form */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+.email-bt,
+.massage-bt {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.email-bt:focus,
+.massage-bt:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.send_btn {
+    text-align: center; /* Center the button */
+}
+
+.main_bt {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.main_bt:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Map Styles */
+.map-responsive {
+    padding: 20px; /* Padding around the map */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Position relative */
+    height: 508px; /* Fixed height for the map */
+}
+
+.map-responsive iframe {
+    border: 0; /* Remove border */
+    width: 100%; /* Full width map */
+    height: 100%; /* Full height map */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact_section {
+        padding: 30px 0; /* Reduce padding for smaller screens */
+    }
+
+    .contact_text {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .email-bt,
+    .massage-bt {
+        font-size: 14px; /* Smaller font size for inputs */
+    }
+}

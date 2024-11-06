@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/a.css">
+</head>
+<body>
+
+    <!-- Header Section Start -->
+    <div class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" alt="Logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Audio Section -->
+    <div class="audio_section">
+        <h2>Relaxing Coffee Sounds</h2>
+        <audio controls>
+            <source src="./images/TunePocket-Relaxing-Jazz-Background-30-Sec-Preview.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <!-- Main Content Section with Left Sidebar Start -->
+    <div class="container-fluid layout_padding">
+        <div class="row">
+            <!-- Left Sidebar with Image Links -->
+            <div class="col-md-3">
+                <div class="sidebar p-3 bg-light">
+                    <h4>Categories</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><img src="./images/img-1.png" alt="Espresso" class="me-2">Espresso</a></li>
+                        <li><a href="#"><img src="./images/img-2.png" alt="Latte" class="me-2">Latte</a></li>
+                        <li><a href="#"><img src="./images/img-3.png" alt="Cappuccino" class="me-2">Cappuccino</a></li>
+                        <li><a href="#"><img src="./images/img-8.png" alt="Mocha" class="me-2">Mocha</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content Section -->
+            <div class="col-md-9">
+                <!-- About Section with Figure and Caption -->
+                <div class="about_section mb-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>About Us</h2>
+                            <p>
+                                Welcome to Grand Coffee Shop, where every cup tells a story. Our passion for coffee drives us to source the finest beans and craft each beverage with care, creating a rich experience that brings people together.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="figure">
+                                <img src="images/about-img.png" alt="About Us" class="figure-img img-fluid rounded">
+                                <figcaption class="figure-caption text-center">Our cozy ambiance and high-quality coffee make us a favorite spot for coffee lovers.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Articles Section with Scalable Image in 2-Column Layout -->
+                <div class="articles_section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <img src="./images/img-7.png" class="card-img-top img-fluid" alt="Article 1">
+                                <div class="card-body">
+                                    <p class="card-text">Discover the taste and aroma of our exclusive coffee blends crafted to perfection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <img src="./images/img-4.png" class="card-img-top img-fluid" alt="Article 2">
+                                <div class="card-body">
+                                    <p class="card-text">Learn more about our sustainable coffee practices and premium ingredients.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Articles Section End -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video_section text-center my-5">
+        <h2>Welcome to Our Coffee Shop</h2>
+        <video width="600" controls>
+            <source src="./images/Coffee shop promo video _ Sony a7III with Sigma 24-70mm f2.8.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Main Content Section with Left Sidebar End -->
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
